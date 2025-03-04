@@ -1,11 +1,11 @@
 print("h")
 
 import pymorphy2
-import pymystem3
+#import pymystem3
 #from pyaspeller import YandexSpeller
 
 m2 = pymorphy2.MorphAnalyzer()
-m3 = pymystem3.Mystem()
+#m3 = pymystem3.Mystem()
 #speller = YandexSpeller()
 #text = 'В суботу утромь'
 #changes = {change['word']: chande['s'][0] for change in speller.spell(text)}
@@ -15,7 +15,7 @@ m3 = pymystem3.Mystem()
 u = m2.parse('шёл')[0]
 
 print(u.normal_form)
-print(m3.analyze('шёл')[0])
+#print(m3.analyze('шёл')[0])
 
 
 
